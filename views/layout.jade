@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title=title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='javascripts/bower_components/jquery/dist/jquery.min.js')
+    script(src='javascripts/custom.js')
+  body
+    block header
+      header
+        img.img-thumbnail(alt="", src="./images/profile.jpg", width=80)
+        span#nameplate.text-left
+          h1 Kristin Agos
+          h2 Web Developer
+        hr
+        ul.menu-social.nav.nav-pills.menu-style
+          li
+            a(href="")
+              i.fa.fa-camera-retro
+          li
+            a(href="")
+              i.fa.fa-github-alt
+          li
+            a(href="")
+              i.fa.fa-envelope-o
+    block content
+    block footer

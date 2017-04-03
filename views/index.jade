@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  div#content.container.text-left
+    div#menu.row.text-right
+      ul.nav.menu-left-side.menu-style
+        li(data-target="about-me")
+          a(href="#").active About Me
+        li(data-target="my-work")
+          a(href="#") My Work
+        li(data-target="contact")
+          a(href="#") Contact
+        li(data-target="blog")
+          a(href="#") Blog
+
+    div#about-me.row.text-center.section.active
+      div.col-md-12
+        h2 Hi.  Thanks for stopping by.
+
+    div#my-work.row.text-center.section
+      div.col-sm-6.col-md-4
+        div.thumbnail
+          a(href="")
+            img(alt="", src="./images/thumbnail.png")
+
+          div.caption
+            h3 Project 1
+
+      div.col-sm-6.col-md-4
+        div.thumbnail
+          a(href="")
+            img(alt="", src="./images/logo_short.png")
+
+          div.caption
+            h3 Project 2
+
+      div.col-sm-6.col-md-4
+        div.thumbnail
+          a(href="")
+            img(alt="", src="./images/thumbnail.png")
+
+          div.caption
+            h3 Project 3
+
+    div#contact.row.text-center.section
+      div.col-md-12
+
+    div#blog.row.text-center.section
+      div.col-md-12

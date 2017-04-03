@@ -1,0 +1,125 @@
+@import '..\javascripts\bower_components\bootstrap\less\bootstrap.less';
+@import url('https://fonts.googleapis.com/css?family=Nixie+One');
+@import 'font-awesome.less';
+
+body {
+  overflow-x: hidden;
+
+  h1,
+  h2 {
+    font-family: 'Nixie One', cursive;
+  }
+
+  header {
+    background-color: #FFF;
+    height: 108px;
+    left: 0;
+    margin: auto;
+    min-width: 1014px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 1014px;
+    z-index: 100;
+
+    img {
+      margin-right: 20px;
+      vertical-align: text-bottom;
+    }
+
+    #nameplate {
+      display: inline-block;
+
+      h1 {
+        font-size: 48px;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+    }
+
+    hr {
+      margin: 0;
+    }
+
+    .menu-social {
+      float: right;
+      font-size: 18px;
+      position: relative;
+    }
+  }
+
+  #content {
+    bottom: 0;
+    margin-top: 120px;
+    position: relative;
+    width: 1000px;
+
+    .section {
+      background-color: #FFF;
+      display: none;
+      padding: 50px 80px;
+      position: relative;
+
+      &.active {
+        display: block;
+      }
+
+      h1 {
+        text-align: left;
+      }
+    }
+  }
+
+  .menu-left-side {
+    bottom: 0;
+    height: 600px;
+    left: 15vw;
+    margin: auto 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    li {
+      float: none;
+    }
+  }
+
+  .menu-style > li > a {
+    color: #999;
+    font-family: 'Nixie One', cursive;
+    font-size: 24px;
+    transition: all linear 0.7s;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: #000;
+    }
+
+    &.active {
+      color: #000;
+      font-size: 28px;
+    }
+  }
+
+  footer {
+    background-color: #000;
+    bottom: 0;
+    color: #FFF;
+    font-size: 12px;
+    height: auto;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+
+    a,
+    a:hover,
+    a:active {
+      color: #FFF;
+    }
+  }
+}
